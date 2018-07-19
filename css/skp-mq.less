@@ -1,0 +1,1062 @@
+@charset "utf-8";
+@import "skp.less";
+
+@media screen and (max-width: 1792px) {
+.header {
+    
+    ul.navigation {
+        margin-left: -20px;
+
+        & > li {
+            padding: 0 12px;
+        }
+    }
+    .phone {
+        font-size: 24px;
+    }
+}
+.ourTeam {
+    
+    .ourTeamBottom {
+        
+        .columns {
+            
+            .column {
+                
+                &.columnLeft {
+                    
+                    .personTop {
+                        padding-left: 40px;
+                    }
+                }
+                &.columnRight {
+                    
+                    .personTop {
+                        padding-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+.services {
+    
+    .items {
+        
+        .item {
+            
+            .itemContainer {
+                font-size: 18px;
+                
+                .icon {
+                    top: 30px;
+                    left: 30px;
+                    
+                    img {
+                        width: 60px;
+                    }
+                }
+                .name {
+                    bottom: 30px;
+                    left: 25px;
+                    right: 35px;
+                    background: url(../images/button_arrow.svg) 5px bottom no-repeat;
+                    background-size: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+            &.nextSection {
+                
+                .name {
+                    top: 35px;
+                }
+                .scrollDown {
+                    left: 30px;
+                    bottom: 30px;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+                &:hover {
+                    
+                    .scrollDown {
+                        bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 1599px) {
+.wrapper {
+    width: 90%;
+}
+.wrapperContainer {
+    padding: 0 40px;
+}
+.header {
+    
+    ul.navigation {
+
+        & > li {
+            padding: 0 10px;
+        }
+    }
+    .phone {
+        font-size: 20px;
+    }
+}
+.topSection {
+    
+    .content {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 80;
+        height: 280px;
+        
+        .contentContainer {
+            
+            h2 {
+                font-size: 56px;
+            }
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+    .navigationSection {
+        bottom: 80px;
+        
+        ul {
+            
+            li {
+                margin-right: 15px;
+                width: 80px;
+                
+                &.current {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .blueSection {
+        bottom: 80px;
+        
+        .box1 {
+            width: 340px;
+            height: 340px;
+            padding: 40px;
+            
+            .top {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 13px;
+            }
+            .bottom {
+                bottom: 40px;
+                left: 40px;
+                right: 40px;
+                
+                .year {
+                    font-size: 40px;
+                    .fBold();
+                }
+            }
+        }
+        .box2 {
+            width: 120px;
+            height: 340px;
+            
+            .scrollDown {
+                bottom: 45px;
+            }
+            &:hover {
+                
+                .scrollDown {
+                    bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@keyframes preloader {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
+h3.headline {
+    font-size: 40px;
+    padding: 3px 0 30px 0;
+}
+.aboutUs {
+    
+    .timeline {
+        
+        .year {
+            font-size: 40px;
+        }
+    }
+    .blueBox {
+        min-height: 170px;
+        
+        .blueBoxContainer {
+            padding: 40px;
+            
+            .title {
+                font-size: 40px;
+                line-height: 40px;
+                height: 70px;
+            }
+        }
+    }
+}
+.ourTeam {
+    
+    .ourTeamBottom {
+        
+        .columns {
+            
+            .column {
+                
+                &.columnLeft {
+                    
+                    .personTop {
+                        padding-left: 30px;
+                    }
+                }
+                &.columnRight {
+                    
+                    .personTop {
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.services {
+    
+    .items {
+        
+        .item {
+            
+            .itemContainer {
+                font-size: 16px;
+                
+                .icon {
+                    top: 30px;
+                    left: 30px;
+                    
+                    img {
+                        width: 60px;
+                    }
+                }
+                .name {
+                    bottom: 30px;
+                    left: 25px;
+                    right: 35px;
+                    background: url(../images/button_arrow.svg) 5px bottom no-repeat;
+                    background-size: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+            &.nextSection {
+                
+                .name {
+                    top: 35px;
+                }
+                .scrollDown {
+                    left: 20px;
+                    bottom: 30px;
+                    z-index: 100;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+                &:hover {
+                    
+                    .scrollDown {
+                        bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.services2 {
+    
+    .sliderRow {
+        
+        .sliderPrev {
+            display: none;
+        }
+        .sliderNext {
+            display: none;
+        }
+    }
+}
+.cooperation {
+    
+    .items {
+        
+        .title {
+            font-size: 18px;
+            min-height: 160px;
+        }
+    }
+    .info {
+        
+        .icon {
+            
+            img {
+                width: 45px;
+            }
+        }
+    }
+}
+.rewardSection {
+    
+    .title {
+        padding: 90px 0 90px;
+        font-size: 24px;
+        padding-right: 360px;
+    }
+    .items {
+        
+        .item {
+            min-height: 140px;
+            
+            .itemContainer {
+                padding: 35px;
+            }
+        }
+    }
+}
+.careerSlider {
+    
+    .slideContainer {
+        padding: 35px;
+        min-height: 240px;
+        
+        .title {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        .button {
+            bottom: 40px;
+            left: 35px;
+        }
+    }
+}
+}
+@media screen and (max-width: 1439px) {
+.header {
+    
+    ul.navigation {
+        display: none;
+    }
+}
+.aboutUs {
+    padding: 90px 0 180px 0;
+    
+    .photo {
+        width: 37.5%;
+    }
+    .blueBox {
+        left: 0;
+    }
+    .aboutUsContainer {
+        padding-left: 5%;
+    }
+    .columnLeft {
+        
+        .columnContainer {
+            padding-right: 0;
+        }
+    }
+}
+.ourTeam {
+    
+    .ourTeamTop {
+        padding: 40px 0 160px;
+    }
+    .ourTeamBottom {
+        
+        .icon {
+            bottom: 90px;
+            
+            img {
+                width: 160px;
+            }
+        }
+        .columns {
+            
+            .column {
+                padding-bottom: 90px;
+                
+                .separator {
+                    width: 50px;
+                    margin: 35px 0;
+                }
+            }
+        }
+    }
+    .button {
+        padding: 50px 0 0 0;
+    }
+}
+.services {
+    
+    .serviceContainer {
+        padding: 90px 0;
+    }
+    .items {
+        margin-top: 60px;
+        
+        .item {
+            
+            .itemContainer {
+                font-size: 15px;
+                
+                .icon {
+                    top: 20px;
+                    left: 20px;
+                    
+                    img {
+                        width: 50px;
+                    }
+                }
+                .name {
+                    bottom: 20px;
+                    left: 15px;
+                    right: 20px;
+                    background: url(../images/button_arrow.svg) 5px bottom no-repeat;
+                    background-size: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+            &.nextSection {
+                
+                .name {
+                    top: 35px;
+                }
+                .scrollDown {
+                    left: 20px;
+                    bottom: 20px;
+                    z-index: 100;
+
+                    img {
+                        width: 35px;
+                    }
+                }
+                &:hover {
+                    
+                    .scrollDown {
+                        bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.uppercase {
+    font-size: 13px;
+}
+h3.headline {
+    font-size: 36px;
+    padding: 3px 0 30px 0;
+}
+.services2 {
+    
+    .photo {
+        width: 37.5%;
+    }
+    .desc {
+        padding-bottom: 60px;
+    }
+    .services2Container {
+        padding-left: 5%;
+    }
+    .servicesSlider {
+        
+        .slick-dots {
+            left: 25%;
+            padding-left: 0;
+            
+            li {
+                margin: 0 2px !important;
+
+                button {
+                    width: 7px !important;
+                    height: 7px !important;
+                }
+            }
+            .slick-active {
+
+                button {
+                    width: 12px !important;
+                    height: 12px !important;
+                }
+            }
+        }
+    }
+}
+.cooperation {
+    
+    .items {
+        
+        .icon {
+            padding: 80px 0 30px;
+        }
+        .title {
+            font-size: 16px;
+            min-height: 120px;
+        }
+        .number {
+            font-size: 36px;
+        }
+    }
+}
+.button {
+    padding: 40px 0 0 0;
+    
+    & > div {
+        
+        .text {
+            padding: 0 18px;
+        }
+        .arrow {
+            width: 45px;
+            height: 45px;
+            
+            .visibleArrow {
+                background: url(../images/button_arrow.svg) center center no-repeat;
+                background-size: 30px;
+                width: 45px;
+                height: 45px;
+            }
+            .hiddenArrow {
+                background: url(../images/button_arrow.svg) center center no-repeat;
+                background-size: 30px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &:hover {
+            
+            .arrow {
+                
+                .visibleArrow {
+                    left: 100%;
+                }
+                .hiddenArrow {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.careerSlider {
+    margin-top: 60px;
+}
+.careerSliderContainer {
+    
+    .sliderPrev {
+        display: none;
+    }
+    .sliderNext {
+        display: none;
+    }
+}
+.career {
+    
+    .careerBottom {
+        padding-top: 60px;
+    }
+}
+.contact {
+    
+    .map {
+        width: 37.5%;
+    }
+    .contactContainer {
+        padding-left: 5%;
+    }
+    .headquarters {
+        padding: 60px 0 30px;
+    }
+    .phone,
+    .fax,
+    .mail {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .subheadline {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .wrapper {
+        
+        .items {
+            padding: 30px 20px;
+            bottom: -60px;
+        }
+        .item {
+            
+            .itemContainer {
+                padding: 0 30px;
+            }
+            .country {
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .other {
+        padding-bottom: 90px;
+    }
+}
+.contactForm {
+    padding: 90px 0 60px 0;
+    
+    .infoRow {
+        padding: 40px 0 0 0;
+    }
+}
+.clause {
+    margin-top: 60px;
+    padding: 40px;
+    
+    .title {
+        font-size: 18px;
+    }
+}
+.checkbox {
+    padding: 40px 0 0 0;
+}
+.footer {
+    padding: 0 0 90px 0;
+}
+}
+@media screen and (max-width: 1366px) {
+.wrapper {
+    width: 100%;
+}
+.wrapperContainer {
+    padding: 0 30px;
+}
+.header {
+    padding: 30px 0;
+    
+    .logo {
+        
+        svg {
+            width: 170px;
+        }
+    }
+}
+}
+@media screen and (max-width: 1279px) {
+.topSection {
+    
+    .content {
+        bottom: 50px;
+        height: 250px;
+        
+        .contentContainer {
+            
+            h2 {
+                font-size: 40px;
+            }
+            .desc {
+                font-size: 13px;
+            }
+        }
+    }
+    .navigationSection {
+        bottom: 80px;
+        
+        ul {
+            
+            li {
+                margin-right: 10px;
+                width: 40px;
+                
+                &.current {
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .blueSection {
+        bottom: 50px;
+        
+        .box1 {
+            width: 280px;
+            height: 280px;
+            padding: 30px;
+            
+            .bottom {
+                bottom: 30px;
+                left: 30px;
+                right: 30px;
+                
+                .year {
+                    font-size: 32px;
+                }
+            }
+        }
+        .box2 {
+            width: 90px;
+            height: 280px;
+            
+            .scrollDown {
+                bottom: 35px;
+            }
+            &:hover {
+                
+                .scrollDown {
+                    bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@keyframes preloader {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+.section.start {
+    min-height: 600px;
+}
+.topSection {
+    min-height: 600px;
+}
+}
+@media screen and (max-width: 1199px) {
+body, html {
+    font-size: 13px;
+}
+h3.headline {
+    font-size: 30px;
+    padding: 3px 0 25px 0;
+}
+.aboutUs {
+    padding: 10px 0 0 0;
+    
+    .photo {
+        top: 60px;
+    }
+    .aboutUsContainer {
+        padding-left: 20px;
+    }
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .columnLeft {
+        
+        .columnContainer {
+            padding-bottom: 20px;
+        }
+    }
+    .columnRight {
+        
+        .columnContainer {
+            padding-left: 0;
+        }
+    }
+    .blueBox {
+        
+        .blueBoxContainer {
+            
+            .title {
+                font-size: 30px;
+                line-height: 30px;
+                height: 60px;
+            }
+        }
+    }
+    .timeline {
+        
+        .year {
+            font-size: 30px;
+        }
+    }
+}
+.services {
+    
+    .serviceContainer {
+        padding: 60px 0;
+    }
+}
+.services2 {
+    padding: 0 0 90px 0;
+    
+    .services2Container {
+        padding-left: 20px;
+    }
+    .desc {
+        padding-bottom: 50px;
+    }
+    .sliderRow {
+        
+        .columnLeft {
+            width: 37.5%;
+        }
+        .columnRight {
+            min-height: 480px;
+        }
+    }
+    .servicesSlider {
+        min-height: 480px;
+    }
+}
+.ourTeam {
+    
+    .ourTeamTop {
+        padding: 20px 0 160px 0;
+    }
+    .ourTeamBottom {
+        
+        .columns {
+            
+            .column {
+                
+                ul {
+
+                    li {
+                        padding-bottom: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+h2.sectionName2 {
+    padding: 0 0 15px 0;
+}
+.cooperation {
+    
+    .cooperationTop {
+        padding: 0;
+    }
+    .items {
+        
+        .title {
+            min-height: 150px;
+        }
+    }
+}
+.rewardSection {
+    padding-bottom: 90px;
+    
+    .title {
+        padding: 50px 300px 50px 0;
+        font-size: 18px;
+    }
+}
+.career {
+    padding: 60px 0 60px;
+    
+    .careerBottom {
+        padding-top: 50px;
+    }
+}
+.careerSlider {
+    margin-top: 50px;
+}
+.contact {
+    padding: 20px 0 0 0;
+    
+    .contactContainer {
+        padding-left: 20px;
+    }
+    .headquarters {
+        padding: 50px 0 30px 0;
+    }
+}
+.contactForm {
+    padding: 60px 0 50px 0;
+    
+    .form {
+        padding: 40px 0 0 0;
+        
+        .inputContainer {
+            
+            input {
+                font-size: 14px;
+                padding: 15px 0;
+            }
+            textarea {
+                font-size: 14px;
+                padding: 20px 0;
+                height: 55px;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 899px) {
+
+}
+@media screen and (max-width: 767px) {  
+.topSection {
+    
+    .blueSection {
+        background: none;
+        right: 30px;
+        bottom: 40px;
+        
+        .box1 {
+            display: none;
+        }
+        .box2 {
+            width: 40px;
+            height: 40px;
+            .borderRadius(@radius: 50px);
+            
+            .scrollDown {
+                bottom: 5px;
+                margin-left: -15px;
+                
+                img {
+                    width: 30px;
+                }
+            }
+            &:hover {
+                
+                .scrollDown {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+    .content {
+        bottom: 30px;
+        height: 220px;
+        
+        .contentContainer {
+            
+            h2 {
+                font-size: 32px;
+            }
+            .desc {
+                font-size: 13px;
+            }
+        }
+    }
+    .navigationSection {
+        bottom: 45px;
+        
+        ul {
+            
+            li {
+                margin-right: 10px;
+                width: 30px;
+                
+                &.current {
+                    width: 60px;
+                }
+                .number {
+                    font-size: 13px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+@keyframes preloader {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60px;
+    }
+}
+.section.start {
+    min-height: 480px;
+}
+.topSection {
+    min-height: 480px;
+}
+}
+@media screen and (max-width: 599px) {
+.wrapperContainer {
+    padding: 0 20px;
+}
+.header {
+    padding: 20px 0;
+    
+    &.white {
+        padding: 20px 0 20px 0;
+    }
+    .phone {
+        display: none;
+    }
+}
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 459px) { 
+.header {
+    
+    .logo {
+        
+        svg {
+            width: 140px;
+        }
+    }
+}
+}
+@media screen and (max-width: 379px) {
+.topSection {
+    
+    .content {
+        bottom: auto;
+        top: 33%;
+        
+        
+        .contentContainer {
+            padding-right: 20px;
+            
+            .desc {
+                
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navigationSection {
+        display: none;
+    }
+    .blueSection {
+        right: auto;
+        left: 20px;
+        bottom: 30px;
+    }
+}
+
+}
