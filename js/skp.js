@@ -103,6 +103,18 @@ $(window).ready(function() {
               settings: {
                 slidesToShow: 3
               }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 572,
+              settings: {
+                slidesToShow: 1
+              }
             }
         ]
     });
@@ -191,6 +203,12 @@ $(window).ready(function() {
               breakpoint: 1200,
               settings: {
                 slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 572,
+              settings: {
+                slidesToShow: 1
               }
             }
         ]

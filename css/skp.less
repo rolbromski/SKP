@@ -760,6 +760,9 @@ a {
                 stroke-miterlimit: 10;
             }
         }
+        .mobile {
+            display: none;
+        }
     }
     .blueBox {
         background: #005eb4;
@@ -1094,13 +1097,13 @@ h3.headline {
             z-index: 10;
             
             &:hover {
-                z-index: 20;
+                z-index: 20 !important;
                 
                 .itemContainer {
                     -webkit-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
                     -moz-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
                     box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
-                    z-index: 20;
+                    z-index: 20 !important;
                 }
             }
             .itemContainer {
@@ -1182,28 +1185,28 @@ h3.headline {
                 top: -33.333%;
                 right: -33.333%;
                 background: #005eb4;
-                z-index: 100;
+                z-index: 10;
             }
             &.item10 {
                 position: absolute;
                 top: -33.333%;
                 right: -66.666%;
                 background: #0057a8;
-                z-index: 100;
+                z-index: 10;
             }
             &.item11 {
                 position: absolute;
                 top: 0%;
                 right: -33.333%;
                 background: #0064c2;
-                z-index: 100;
+                z-index: 10;
             }
             &.item12 {
                 position: absolute;
                 top: 0;
                 right: -66.666%;
                 background: #006bcf;
-                z-index: 100;
+                z-index: 10;
             }
             &.nextSection {
                 position: absolute;
@@ -1211,7 +1214,7 @@ h3.headline {
                 right: -66.666%;
                 background: @white;
                 color: @black;
-                z-index: 100;
+                z-index: 10;
                 cursor: pointer;
                 
                 .name {
@@ -1724,7 +1727,7 @@ h3.headline {
         .items {
             position: absolute;
             background: #26272c;
-            z-index: 10;
+            z-index: 12;
             bottom: -90px;
             width: 100%;
             padding: 40px 0;
