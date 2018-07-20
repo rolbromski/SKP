@@ -10,7 +10,7 @@ $(window).ready(function() {
         arrows: false,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
         fade: true,
         focusOnSelect: false,
         pauseOnHover: false
