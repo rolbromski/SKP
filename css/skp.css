@@ -182,6 +182,17 @@ a {
   font-weight: 500;
   font-style: normal;
 }
+.header.whiteMobile {
+  background: #ffffff;
+  color: #000000;
+}
+.header.whiteMobile .logo svg #skp {
+  fill: #1B4C9A;
+}
+.header.whiteMobile .logo svg #szczerba,
+.header.whiteMobile .logo svg #kasinski {
+  fill: #9B9B9B;
+}
 .header.white {
   background: #ffffff;
   color: #000000;
@@ -2065,7 +2076,7 @@ h3.headline span {
   height: 100%;
   width: 90%;
   max-width: 1024px;
-  z-index: 1010;
+  z-index: 9999;
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
@@ -2163,6 +2174,154 @@ h3.headline span {
   background: rgba(0, 0, 0, 0.6);
   pointer-events: auto;
   cursor: pointer;
+}
+.noscroll {
+  overflow: hidden !important;
+}
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #005eb4 url(../images/hamburger.svg) center center no-repeat;
+  background-size: 26px auto;
+  position: fixed;
+  top: 45px;
+  right: 40px;
+  z-index: 2000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.hamburger:hover {
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.hamburger.top {
+  top: 30px;
+}
+.hamburger.disabled {
+  opacity: 0;
+  visibility: 0;
+  z-index: 0;
+}
+.closeMenu {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #005eb4 url(../images/close.svg) center center no-repeat;
+  background-size: 26px auto;
+  position: fixed;
+  top: 45px;
+  right: 40px;
+  z-index: 2000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: none;
+}
+.closeMenu:hover {
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.closeMenu.top {
+  top: 30px;
+}
+.closeMenu.disabled {
+  opacity: 0;
+  visibility: 0;
+  z-index: 0;
+}
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+}
+.mobileMenu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.mobileMenu.active .mobileMenuContainer {
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.mobileMenu .mobileMenuContainer {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 40px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -ms-transform: translate(0, -30px);
+  -webkit-transform: translate(0, -30px);
+  transform: translate(0, -30px);
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper {
+  margin: 0 20px;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav {
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100% !important;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 13px 0;
+  text-align: center;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li a {
+  color: #000000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 22px;
+  display: block;
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li a:hover {
+  color: #005eb4;
+}
+.mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li.current a {
+  color: #005eb4;
+}
+.mobileMenu .lang {
+  position: relative;
+  color: #000000;
+}
+.mobileMenu .lang a {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 5px;
 }
 @media screen and (max-width: 1792px) {
   .header ul.navigation {
@@ -2389,6 +2548,24 @@ h3.headline span {
   .header ul.navigation {
     display: none;
   }
+  .header .headerRow .columnRight {
+    display: table-cell;
+    padding-right: 50px;
+  }
+  .hamburger {
+    display: block;
+    top: 45px;
+  }
+  .hamburger.top {
+    top: 30px;
+  }
+  .closeMenu {
+    display: block;
+    top: 45px;
+  }
+  .closeMenu.top {
+    top: 30px;
+  }
   .aboutUs {
     padding: 90px 0 180px 0;
   }
@@ -2608,6 +2785,20 @@ h3.headline span {
   .header .logo svg {
     width: 170px;
   }
+  .hamburger {
+    top: 28px;
+    right: 30px;
+  }
+  .hamburger.top {
+    top: 26px;
+  }
+  .closeMenu {
+    top: 28px;
+    right: 30px;
+  }
+  .closeMenu.top {
+    top: 26px;
+  }
 }
 @media screen and (max-width: 1279px) {
   .topSection .content {
@@ -2705,6 +2896,7 @@ h3.headline span {
   }
   .aboutUs .columnRight .columnContainer {
     padding-left: 0;
+    padding-bottom: 250px;
   }
   .aboutUs .blueBox .blueBoxContainer .title {
     font-size: 30px;
@@ -3304,6 +3496,26 @@ h3.headline span {
     width: 50%;
     padding-bottom: 50%;
   }
+  .hamburger {
+    top: 20px;
+    right: 30px;
+  }
+  .hamburger.top {
+    top: 20px;
+  }
+  .closeMenu {
+    top: 20px;
+    right: 30px;
+  }
+  .closeMenu.top {
+    top: 20px;
+  }
+  .mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li {
+    padding: 8px 0;
+  }
+  .mobileMenu .mobileMenuContainer .mobileMenuWrapper .mobileNav ul li a {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 572px) {
   .contactForm .button {
@@ -3336,6 +3548,20 @@ h3.headline span {
   }
   h3.headline {
     font-size: 22px;
+  }
+  .hamburger {
+    top: 15px;
+    right: 30px;
+  }
+  .hamburger.top {
+    top: 15px;
+  }
+  .closeMenu {
+    top: 15px;
+    right: 30px;
+  }
+  .closeMenu.top {
+    top: 15px;
   }
 }
 @media screen and (max-width: 379px) {
