@@ -2323,6 +2323,32 @@ h3.headline span {
   vertical-align: middle !important;
   margin: 0 5px;
 }
+.validation_error {
+  padding: 20px 20px;
+  margin-bottom: 25px;
+  border: none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+}
+.gform_confirmation_message {
+  padding: 20px 20px;
+  margin-bottom: 25px;
+  border: none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background: #005eb4;
+  color: #ffffff;
+}
+.validation_message {
+  font-size: 13px;
+  padding: 8px 0 0 0;
+}
 @media screen and (max-width: 1792px) {
   .header ul.navigation {
     margin-left: -20px;
@@ -3584,4 +3610,3 @@ h3.headline span {
     bottom: 30px;
   }
 }
-
