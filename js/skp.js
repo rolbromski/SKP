@@ -81,7 +81,7 @@ $(window).ready(function() {
     
     $('.services .nextSection').click(function(e) {
         $('html, body').animate({
-            scrollTop: $(".cooperation").offset().top-95
+            scrollTop: $(".services2").offset().top-95
         }, 1000);
     });
     

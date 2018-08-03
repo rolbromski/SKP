@@ -546,11 +546,13 @@ a {
             width: 380px;
             height: 380px;
             padding: 50px;
+            position: relative;
             
             .top {
                 text-transform: uppercase;
                 letter-spacing: 3px;
                 font-size: 13px;
+                position: relative;
             }
             .bottom {
                 position: absolute;
@@ -564,7 +566,7 @@ a {
                     font-size: 13px;
                 }
                 .year {
-                    font-size: 50px;
+                    font-size: 42px;
                     .fBold();
                 }
             }
@@ -734,7 +736,7 @@ a {
             padding-left: 45px;
         }
         .year {
-            font-size: 50px;
+            font-size: 40px;
             .fBold();
         }
         .desc {
@@ -744,7 +746,7 @@ a {
             left: 25%;
             right: 0;
             text-align: center;
-            bottom: 125px;
+            bottom: 120px;
             position: absolute;
             color: #dfdfdf;
         }
@@ -1789,6 +1791,15 @@ h3.headline {
         font-size: 13px;
         color: #979797;
         padding: 50px 0 0 0;
+        
+        a {
+            color: @white;
+            
+            &:hover {
+                text-decoration: underline !important;
+                color: @white;
+            }
+        }
     }
     .form {
         padding: 70px 0 0 0;
@@ -2362,6 +2373,14 @@ h3.headline {
                 min-width: 17px;
                 text-align: center;
             }
+        }
+    }
+    a {
+        color: @black;
+        text-decoration: underline !important;
+        
+        &:hover {
+            color: @blue;
         }
     }
 }

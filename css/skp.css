@@ -452,11 +452,13 @@ a {
   width: 380px;
   height: 380px;
   padding: 50px;
+  position: relative;
 }
 .topSection .blueSection .box1 .top {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 13px;
+  position: relative;
 }
 .topSection .blueSection .box1 .bottom {
   position: absolute;
@@ -470,7 +472,7 @@ a {
   font-size: 13px;
 }
 .topSection .blueSection .box1 .bottom .year {
-  font-size: 50px;
+  font-size: 42px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
@@ -635,7 +637,7 @@ a {
   padding-left: 45px;
 }
 .aboutUs .timeline .year {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
@@ -647,7 +649,7 @@ a {
   left: 25%;
   right: 0;
   text-align: center;
-  bottom: 125px;
+  bottom: 120px;
   position: absolute;
   color: #dfdfdf;
 }
@@ -1618,6 +1620,13 @@ h3.headline span {
   color: #979797;
   padding: 50px 0 0 0;
 }
+.contactForm .infoRow a {
+  color: #ffffff;
+}
+.contactForm .infoRow a:hover {
+  text-decoration: underline !important;
+  color: #ffffff;
+}
 .contactForm .form {
   padding: 70px 0 0 0;
 }
@@ -2153,6 +2162,13 @@ h3.headline span {
   font-size: 9px;
   min-width: 17px;
   text-align: center;
+}
+.aside a {
+  color: #000000;
+  text-decoration: underline !important;
+}
+.aside a:hover {
+  color: #005eb4;
 }
 .pageMask {
   position: fixed;
@@ -3610,3 +3626,4 @@ h3.headline span {
     bottom: 30px;
   }
 }
+
