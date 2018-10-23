@@ -253,6 +253,11 @@ $(window).ready(function() {
         }, 500);
     });
     
+    $(".closeAside a").click(function() {
+        hideAside();
+        hidePageMask();
+    });
+    
     $(".closeProductDetails").click(function() {
         hideAside();
         hidePageMask();

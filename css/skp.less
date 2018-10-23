@@ -615,6 +615,7 @@ a {
             h2 {
                 font-size: 80px;
                 .fBold();
+                width: 66% !important;
             }
             .desc {
                 font-size: 20px;
@@ -1758,9 +1759,9 @@ h3.headline {
         }
         .item {
             display: table-cell;
-            vertical-align: middle;
             width: 33.33%;
             color: @white;
+            vertical-align: top;
             
             .itemContainer {
                 padding: 30px 50px;
@@ -2332,7 +2333,7 @@ h3.headline {
     }
     ul {
         .listClear();
-        padding: 15px 0 25px;
+        padding: 3px 0 15px;
         
         li {
             .listClear();
@@ -2348,11 +2349,14 @@ h3.headline {
                 color: @blue;
                 .fBold();
             }
+            ul {
+                padding: 0;
+            }
         }
     }
     ol {
         .listClear();
-        padding: 15px 0 25px;
+        padding: 3px 0 15px;
         
         li {
             .listClear();
@@ -2373,14 +2377,19 @@ h3.headline {
                 min-width: 17px;
                 text-align: center;
             }
+            ol {
+                padding: 0;
+            }
         }
+        
     }
     a {
-        color: @black;
+        color: @blue;
         text-decoration: underline !important;
         
         &:hover {
             color: @blue;
+            text-decoration: none !important;
         }
     }
 }
@@ -2561,4 +2570,31 @@ h3.headline {
 .validation_message {
     font-size: 13px;
     padding: 8px 0 0 0;
+}
+.closeAside {
+    padding-top: 60px;
+    
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        .borderRadius(@radius: 50%);
+        background: #005eb4 url(../images/close.svg) center center no-repeat;
+        background-size: 26px auto;
+        margin-right: 10px;
+        .transition();
+    }
+    a {
+        text-decoration: none !important;
+        
+        &:hover {
+            
+            span {
+                -webkit-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
+                -moz-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
+                box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.1);
+            }
+        }
+    }
 }

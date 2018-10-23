@@ -1363,7 +1363,76 @@ h2.sectionName2 {
 }
 }
 @media screen and (max-width: 899px) {
-
+.services {
+    
+    .photo {
+        display: none;
+    }
+    .serviceContainer {
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .desc {
+        text-align: center;
+    }
+    .items {
+        
+        .item {
+            
+            &.item7 {
+                background: #00509c;
+            }
+            &.item8 {
+                background: #004a8f;
+            }
+            &.item9 {
+                display: inline-block;
+                width: 33.333%;
+                padding-bottom: 33.333%;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+            &.item10 {
+                display: inline-block;
+                width: 33.333%;
+                padding-bottom: 33.333%;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+            &.item11 {
+                display: inline-block;
+                width: 33.333%;
+                padding-bottom: 33.333%;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+            &.item12 {
+                display: inline-block;
+                width: 33.333%;
+                padding-bottom: 33.333%;
+                position: relative;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+            &.nextSection {
+                display: none;                
+            }
+        }
+    }
+}
 }
 @media screen and (max-width: 767px) {  
 .topSection {
@@ -1482,74 +1551,14 @@ h2.sectionName2 {
         }
     }
 }
-.services {
+.closeAside {
+    padding-top: 40px;
     
-    .photo {
-        display: none;
-    }
-    .serviceContainer {
-        width: auto;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 0;
-    }
-    .desc {
-        text-align: center;
-    }
-    .items {
-        
-        .item {
-            
-            &.item7 {
-                background: #00509c;
-            }
-            &.item8 {
-                background: #004a8f;
-            }
-            &.item9 {
-                display: inline-block;
-                width: 33.333%;
-                padding-bottom: 33.333%;
-                position: relative;
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-            }
-            &.item10 {
-                display: inline-block;
-                width: 33.333%;
-                padding-bottom: 33.333%;
-                position: relative;
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-            }
-            &.item11 {
-                display: inline-block;
-                width: 33.333%;
-                padding-bottom: 33.333%;
-                position: relative;
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-            }
-            &.item12 {
-                display: inline-block;
-                width: 33.333%;
-                padding-bottom: 33.333%;
-                position: relative;
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-            }
-            &.nextSection {
-                display: none;                
-            }
-        }
+    span {
+        width: 30px;
+        height: 30px;
+        background: #005eb4 url(../images/close.svg) center center no-repeat;
+        background-size: 16px auto;
     }
 }
 }
@@ -1665,6 +1674,35 @@ h2.sectionName2 {
                 margin: 0 auto;
             }
         }
+    }
+}
+.contact {
+    
+    .wrapper {
+        position: relative;
+        
+        .items {
+            position: relative;
+            width: auto;
+            bottom: auto;
+            padding-bottom: 10px;
+        }
+        .itemsContainer {
+            display: block;
+            width: auto;
+        }
+        .item {
+            display: block;
+            width: auto;
+            padding-bottom: 20px;
+            
+            .itemContainer {
+                border-right: none;
+            }
+        }
+    }
+    .map {
+        top: -1px;
     }
 }
 }
