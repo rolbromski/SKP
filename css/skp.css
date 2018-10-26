@@ -1487,6 +1487,44 @@ h3.headline span {
 .careerSlider .slideContainer .city {
   color: #979797;
 }
+.careerSlider .slick-dots {
+  bottom: -60px;
+}
+.careerSlider .slick-dots li {
+  margin: 0 4px !important;
+}
+.careerSlider .slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  border: none !important;
+  display: block !important;
+  opacity: 1 !important;
+  -moz-border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  margin: 3px auto !important;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.careerSlider .slick-dots li button::before {
+  display: none !important;
+}
+.careerSlider .slick-dots li button:hover {
+  background: #fff !important;
+}
+.careerSlider .slick-dots .slick-active button {
+  width: 17px !important;
+  height: 17px !important;
+  margin: 0 auto !important;
+  background: #00509c !important;
+}
+.careerSlider .slick-dots .slick-active button:hover {
+  background: #00509c !important;
+}
 .contact {
   background: #ffffff;
   color: #000000;
@@ -2137,6 +2175,24 @@ h3.headline span {
 .aside ul li ul {
   padding: 0;
 }
+.aside ul li ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 8px 0;
+  padding-left: 15px;
+  position: relative;
+}
+.aside ul li ul li:before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  color: #005eb4;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+}
 .aside ol {
   margin: 0;
   padding: 0;
@@ -2747,6 +2803,17 @@ h3.headline span {
     width: 12px !important;
     height: 12px !important;
   }
+  .careerSlider .slick-dots li {
+    margin: 0 2px !important;
+  }
+  .careerSlider .slick-dots li button {
+    width: 7px !important;
+    height: 7px !important;
+  }
+  .careerSlider .slick-dots .slick-active button {
+    width: 12px !important;
+    height: 12px !important;
+  }
   .cooperation .items .icon {
     padding: 80px 0 30px;
   }
@@ -2795,7 +2862,7 @@ h3.headline span {
     display: none;
   }
   .career .careerBottom {
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .contact .map {
     width: 37.5%;
@@ -3000,10 +3067,10 @@ h3.headline span {
     width: 37.5%;
   }
   .services2 .sliderRow .columnRight {
-    min-height: 480px;
+    min-height: 420px;
   }
   .services2 .servicesSlider {
-    min-height: 480px;
+    min-height: 420px;
   }
   .ourTeam .ourTeamTop {
     padding: 20px 0 160px 0;
@@ -3697,6 +3764,4 @@ h3.headline span {
     bottom: 30px;
   }
 }
-div#header {
-  border: 1px solid #842210;
-}
+

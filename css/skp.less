@@ -1650,6 +1650,45 @@ h3.headline {
             color: #979797;
         }
     }
+    .slick-dots {
+        bottom: -60px;
+
+        li {
+            margin: 0 4px !important;
+
+            button {
+                width: 10px !important;
+                height: 10px !important;
+                border: none !important;
+                display: block !important;
+                opacity: 1 !important;
+                .borderRadius(@radius: 50%) !important;
+                background: rgba(255,255,255,0.2) !important;
+                margin: 3px auto !important;
+                .transition(@transition: 0.1s);
+
+                &::before {
+                    display: none !important;
+                }
+                &:hover {
+                    background: #fff !important;
+                }
+            }
+        }
+        .slick-active {
+
+            button {
+                width: 17px !important;
+                height: 17px !important;
+                margin: 0 auto !important;
+                background: #00509c !important;
+
+                &:hover {
+                    background: #00509c !important;
+                }
+            }
+        }
+    }
 }
 .contact {
     background: @white;
@@ -2351,6 +2390,22 @@ h3.headline {
             }
             ul {
                 padding: 0;
+                
+                li {
+                    .listClear();
+                    margin: 8px 0;
+                    padding-left: 15px;
+                    position: relative;
+
+                    &:before {
+                        content: ".";
+                        position: absolute;
+                        left: 0;
+                        top: -4px;
+                        color: @blue;
+                        .fBold();
+                    }
+                }
             }
         }
     }

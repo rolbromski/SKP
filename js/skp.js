@@ -99,21 +99,30 @@ $(window).ready(function() {
         pauseOnHover: true,
         responsive: [
             {
+              breakpoint: 1440,
+              settings: {
+                dots: true
+              }
+            },
+            {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
+                dots: true
               }
             },
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                dots: true
               }
             },
             {
               breakpoint: 572,
               settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots: true
               }
             }
         ]
