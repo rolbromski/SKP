@@ -2152,7 +2152,7 @@ h3.headline span {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding: 3px 0 15px;
+  padding: 0 0 15px;
 }
 .aside ul li {
   margin: 0;
@@ -2430,7 +2430,8 @@ h3.headline span {
   padding: 8px 0 0 0;
 }
 .closeAside {
-  padding-top: 60px;
+  padding-top: 50px;
+  text-align: right;
 }
 .closeAside span {
   display: inline-block;
@@ -2443,7 +2444,6 @@ h3.headline span {
   border-radius: 50%;
   background: #005eb4 url(../images/close.svg) center center no-repeat;
   background-size: 26px auto;
-  margin-right: 10px;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -3697,6 +3697,9 @@ h3.headline span {
     width: 200px;
     margin: 0 auto;
   }
+  .contact .other {
+    padding-bottom: 40px;
+  }
   .contact .wrapper {
     position: relative;
   }
@@ -3764,4 +3767,3 @@ h3.headline span {
     bottom: 30px;
   }
 }
-
